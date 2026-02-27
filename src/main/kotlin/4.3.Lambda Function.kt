@@ -8,6 +8,8 @@ fun main() {
     lambdaFunctionWithReturnType()
 
     anonymousFunctionAndLambdaFunction()
+
+    inlineFunction()
 }
 
 fun lambdaFunction1() {
@@ -84,5 +86,9 @@ fun anonymousFunctionAndLambdaFunction() {
     }
 
     println("The value of anonymous function: ${sum(10, 45)}")
+
+}
+
+fun inlineFunction() {
 
 }
