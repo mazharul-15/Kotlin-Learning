@@ -1,8 +1,22 @@
 // List of Kotlin Collections
 
 fun main(args: Array<String>) {
+    listCration()
     //immutableList()
     mutableList()
+}
+
+fun listCration() {
+    // immutable list creation
+
+
+    // mutable list creation
+    val list = mutableListOf("I", "Love", "My", "Bangladesh")
+    val newList = mutableListOf<String>("I", "Love", "My", "Bangladesh")
+    val newList2: MutableList<String> = mutableListOf("I", "Love", "My", "Bangladesh")
+    // empty list
+    val newEmptyList = mutableListOf<String>()
+    val newEmptyList2: MutableList<String> = mutableListOf()
 }
 
 fun immutableList() {
