@@ -1,13 +1,13 @@
 // List of Kotlin Collections
 
 fun main(args: Array<String>) {
-    listCration()
+    listCreation()
     allOperatonOfList()
     //immutableList()
     //mutableList()
 }
 
-fun listCration() {
+fun listCreation() {
 
     // immutable list creation
     val immutableList = listOf<String>() // empty list
@@ -71,8 +71,27 @@ fun allOperatonOfList() {
 
     // size & checking
     val allList3 = mutableListOf<String>("A", "B", "C", "D", "E", "F")
+    println("The size of list: " + allList3.size)
+    println("The empty function: " + allList3.isEmpty())
+    println("The not empty function: " + allList3.isNotEmpty())
+    println("The contains function: " + allList3.contains("C"))
+    println("The all contains function: " + allList3.containsAll(listOf("A", "D", "E")))
 
+    // loop operations
+    val allList4 = mutableListOf<String>("A", "B", "C", "D", "E", "F")
+    for (item in allList4) { print(allList4 + " ") }; println()
+    allList4.forEach { print(it + " ")}
+    allList4.forEachIndexed { index, value -> println("$index -> $value") }
 
+    // transformation operations (very important)
+    val allList5 = mutableListOf<String>("A", "B", "C", "D", "E", "F")
+    allList5.map{ it + "X"}
+    println("After applying map: $allList5")
+
+    // filtering operation
+    val allList6 = mutableListOf<String>("A", "B", "C", "D", "E", "F")
+    val newFilteredList = allList6.filter{ it == "A"}
+    println("After filtering list: $newFilteredList")
 }
 
 fun immutableList() {
