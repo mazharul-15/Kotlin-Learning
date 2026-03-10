@@ -3,6 +3,11 @@
     which I have learned yesterday.....
  */
 
+class Student {
+    var name: String? = null
+
+}
+
 fun main(args: Array<String>) {
         dataType()
         varibaleDeclaration()
@@ -18,6 +23,14 @@ fun dataType() {
     val numberInt: Int ? = null
     var num: Int? = null
     println("Number value: $num")
+
+
+    var name: String? = "Kotlin"
+    name = null
+    //println("The length: " + name!!.length)
+    val number2: Int
+    number2 = 100
+    println("The number: " + number2)
 
 }
 
