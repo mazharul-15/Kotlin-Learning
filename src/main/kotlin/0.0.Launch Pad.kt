@@ -5,12 +5,11 @@
 
 class Student {
     var name: String? = null
-
 }
 
 fun main(args: Array<String>) {
         dataType()
-        varibaleDeclaration()
+        variableDeclare()
 }
 
 fun dataType() {
@@ -34,6 +33,11 @@ fun dataType() {
 
 }
 
-fun varibaleDeclaration() {
-
+fun variableDeclare() {
+    val number: Int?
+    number = null
+    var number2: Int? = null
+    var fnum: Float?
+    fnum = readLine()!!.toFloat()
+    println("The value: $fnum")
 }
