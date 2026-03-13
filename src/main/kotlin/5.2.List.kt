@@ -92,6 +92,14 @@ fun allOperatonOfList() {
     val allList6 = mutableListOf<String>("A", "B", "C", "D", "E", "F")
     val newFilteredList = allList6.filter{ it == "A"}
     println("After filtering list: $newFilteredList")
+
+    val notFilteredList = allList6.filterNot { it != "A"}
+    println("After not filtering list: $notFilteredList")
+
+    val filterIndexedlist = allList6.filterIndexed { index, value -> index%2 == 0 }
+    println("After filterIndexed List: $filterIndexedlist")
+
+
 }
 
 fun immutableList() {
