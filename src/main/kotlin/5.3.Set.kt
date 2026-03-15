@@ -26,4 +26,11 @@ fun setDeclaration() {
     println("SetM2: $setM2")
     println("SetM3: $setM3")
     println("SetM4: $setM4")
+
+    // hash set
+    val hashSet1 = hashSetOf<String>("AA", "BB", "CC", "DD", "AA", "1", "1")
+    val hashSet2 = hashSetOf("A", "B", "C", "D")
+
+    println("Hash Set1: $hashSet1")
+    println("Hash Set2: $hashSet2")
 }
