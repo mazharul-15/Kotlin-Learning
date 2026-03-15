@@ -2,6 +2,7 @@
 
 fun main() {
     setDeclaration()
+    setAllOperations()
 }
 
 fun setDeclaration() {
@@ -33,4 +34,23 @@ fun setDeclaration() {
 
     println("Hash Set1: $hashSet1")
     println("Hash Set2: $hashSet2")
+}
+
+fun setAllOperations() {
+    // adding element into set
+    val setM1 = mutableSetOf<String>("A", "1", "A")
+    setM1.add("B")
+    setM1.add("B")
+    println("After adding: $setM1")
+    setM1.addAll(listOf("D", "D", "E", "F"))
+    println("After adding all: $setM1")
+
+    // removing element from set & clear
+    val setM2 = mutableSetOf<String>("A", "B", "A", "C", "D", "E", "F")
+    println("Before removing: $setM2")
+    setM2.remove("A")
+    println("After removing: $setM2")
+    setM2.removeAll(listOf("A", "B", "C"))
+    println("After removing all: $setM2")
+    setM2.clear()
 }
