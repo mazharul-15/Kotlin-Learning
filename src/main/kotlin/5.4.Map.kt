@@ -2,6 +2,7 @@
 
 fun main() {
     mapDeclaration()
+    mapAllOperations()
 }
 
 fun mapDeclaration() {
@@ -20,4 +21,15 @@ fun mapDeclaration() {
         "M" to 45,
         "NHJK" to "Samnge"
     )
+
+    val mapHash = hashMapOf<String, String>(
+        "Name" to "Zahid",
+        "Age" to "32",
+        "Id" to "1802034",
+        "Subject" to "CSE"
+    )
+}
+
+fun mapAllOperations() {
+
 }

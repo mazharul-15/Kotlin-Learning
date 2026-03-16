@@ -20,6 +20,9 @@ fun listCreation() {
     val newList2: MutableList<String> = mutableListOf("I", "Love", "My", "Bangladesh")
     val newEmptyList = mutableListOf<String>() // empty list
     val newEmptyList2: MutableList<String> = mutableListOf() // empty list
+
+    // list with any type
+    val listAny = mutableListOf<Any>(1, "A", "c", true, 45)
 }
 
 fun allOperatonOfList() {
