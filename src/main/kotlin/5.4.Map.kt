@@ -31,5 +31,21 @@ fun mapDeclaration() {
 }
 
 fun mapAllOperations() {
+    // adding value
+    val map1 = mutableMapOf<Int, String>()
+    map1.put(2, "A")
+    map1[2]= "B"
+    map1.putAll(mapOf(
+        4 to "AB",
+        6 to "CD"
+    ))
 
+    println("After adding value: $map1")
+
+    // converting map
+
+        // List to Map
+    val  list = listOf<String>("A", "B", "C", "D")
+    val map = list.associateWith{ it.length }
+    println("List to Map: $map")
 }
