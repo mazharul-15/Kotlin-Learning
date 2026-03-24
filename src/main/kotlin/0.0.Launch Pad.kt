@@ -8,9 +8,62 @@ class Student {
 }
 
 fun main(args: Array<String>) {
-        dataType()
-        variableDeclare()
-        controlFlow()
+    basics()
+    controlFlow()
+    array()
+    string()
+    functions()
+    collections()
+    objectOrientedConcept()
+    exceptionHandling()
+    nullSafetyConcept()
+    regexAndRanges()
+    javaInteroperability()
+    miscellaneous()
+}
+
+fun basics() {
+    dataType()
+}
+
+fun array() {
+
+}
+
+fun string() {
+
+}
+
+fun functions() {
+
+}
+
+fun collections() {
+
+}
+
+fun objectOrientedConcept() {
+
+}
+
+fun exceptionHandling() {
+
+}
+
+fun nullSafetyConcept() {
+
+}
+
+fun regexAndRanges() {
+
+}
+
+fun javaInteroperability() {
+
+}
+
+fun miscellaneous() {
+
 }
 
 fun dataType() {
