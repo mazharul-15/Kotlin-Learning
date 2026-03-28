@@ -1,11 +1,37 @@
 // Array in Kotlin
 
 fun main() {
+    arrayTypes()
     //creatingArraysUsingArrayOf()
     //creatingArraysUsingConstructor()
     //creatingArraysUsingBuiltInFunction()
     //accessingAndModifyingArray()
     allFunctionsOfArrays()
+}
+
+fun arrayTypes() {
+    /*
+        Array are two types:
+            1. Generic Array:
+                            arrayOf("A", "B", "C")
+                            arrayOf<String>("A", "B", "C")
+
+            2. Primitive Array:
+                            intArrayOf(1, 3, 4)
+                            IntArray(1, 3, 4)
+
+                            floatArrayOf(1.2f,  1.4f)
+                            FloatArray(1.2f,  1.4f)
+     */
+
+    // Generic Array
+    val arrGInt = arrayOf(1, 2, 3)
+    val arrGInt2 = arrayOf<Int>(1, 2, 4)
+    val arrGInt3: Array<Int> = arrayOf(1, 3, 4)
+
+    // Primitive Array
+    val arrPInt = intArrayOf(1, 2, 3)
+    val arrPInt2 = IntArray(4)
 }
 
 fun creatingArraysUsingArrayOf() {
