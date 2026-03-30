@@ -43,7 +43,27 @@ fun collections() {
 }
 
 fun objectOrientedConcept() {
+    class Car {
+        lateinit var name: String
+        lateinit var brand: String
+        lateinit var color: String
 
+        fun start() {
+
+        }
+
+        fun accelerate() {
+
+        }
+
+        fun brake() {
+
+        }
+
+        fun stop() {
+
+        }
+    }
 }
 
 fun exceptionHandling() {
