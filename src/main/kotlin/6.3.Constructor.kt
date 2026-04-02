@@ -37,7 +37,47 @@ class Student4(val name: String = "Khairul Basar", val age: Int = 35) {
 
 // Secondary Constructor
 
+class Student5{
+    var name: String
+    var age: Int
+
+    constructor(name: String, age: Int) {
+        this.name = name
+        this.age = age
+    }
+
+    fun getInfo() {
+        println("Name = $name and Age = $age")
+    }
+}
+
+class Student6{  // multiple secondary constructor
+    var name: String
+    var age: Int
+    var id: Int = 0
+
+    constructor(name: String, age: Int) {
+        this.name = name
+        this.age = age
+    }
+    constructor(name: String, age: Int, id: Int) {
+        this.name = name
+        this.age = age
+        this.id = id
+    }
+}
+
+// nested class & inner class
+class Utils{
+    class Validator{
+        fun isValidEmail(email: String): Boolean {
+            return email.contains("@")
+        }
+    }
+}
+
 fun main() {
+    // primary constructor
     val p1 = Person2(4, 5)
     p1.getInfo()
 
@@ -48,4 +88,16 @@ fun main() {
 
     val student4 = Student4()
     student4.getinfo()
+
+    // secondary constructor
+    val student5 = Student5("Axim", 1304566)
+    student5.getInfo()
+    // secondaty mutiple consturctor
+    val student6 = Student6("Axio", 34)
+    val student61 = Student6("Axio1", 45, 123)
+
+    // nested class
+    //val utils = Utils() // this will give error to acces nested class 's member
+    val utils = Utils.Validator()
+    println(utils.isValidEmail("azhr123@gmail.com"))
 }
