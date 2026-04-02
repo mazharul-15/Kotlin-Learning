@@ -76,6 +76,15 @@ class Utils{
     }
 }
 
+class Outer{    // inner class
+    val message = "I love BD"
+    inner class Inner{
+        fun show() {
+            println(message)
+        }
+    }
+}
+
 fun main() {
     // primary constructor
     val p1 = Person2(4, 5)
@@ -100,4 +109,9 @@ fun main() {
     //val utils = Utils() // this will give error to acces nested class 's member
     val utils = Utils.Validator()
     println(utils.isValidEmail("azhr123@gmail.com"))
+
+    // inner class
+    val outer = Outer()
+    val inner = outer.Inner()
+    inner.show()
 }
