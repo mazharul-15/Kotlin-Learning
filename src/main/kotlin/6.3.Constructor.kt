@@ -85,6 +85,7 @@ class Outer{    // inner class
     }
 }
 
+
 fun main() {
     // primary constructor
     val p1 = Person2(4, 5)
