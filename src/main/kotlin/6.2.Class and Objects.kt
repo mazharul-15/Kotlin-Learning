@@ -1,6 +1,6 @@
 // This will contain about class and objects details
 
-class Person {
+class Person10 {
     var name: String = ""
     var age: Int = 0
     var id: Int = 0
@@ -11,7 +11,7 @@ class Person {
 }
 
 fun main() {
-    val p1 = Person()
+    val p1 = Person10()
     p1.name = "Amjad Ahmmed"
     p1.age = 31
     p1.id = 1801045
