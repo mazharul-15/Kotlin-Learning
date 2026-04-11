@@ -1,7 +1,7 @@
 /*
     Kotlin Polymorphism
-        1. Method Overriding
-        2. Method Overloading
+        1. Method Overriding = same function name, different behavior
+        2. Method Overloading = same function name, different parameters
 
         same function but behaves different
 
@@ -45,6 +45,16 @@ class Cow: Animal() {
     }
 }
 
+// #Overloading
+class Calculate {
+    fun add(a: Int, b: Int): Int {
+        return a + b
+    }
+
+    fun add(a: Int, b: Int, c: Int): Int {
+        return a + b + c
+    }
+}
 
 fun main() {
     // Overriding
@@ -58,5 +68,8 @@ fun main() {
     cow.sound()
 
     // Overloading
-
+    val cal = Calculate()
+    val result = cal.add(2, 4)
+    val result2 = cal.add(3, 5, 6)
+    println("Result: $result and $result2")
 }
