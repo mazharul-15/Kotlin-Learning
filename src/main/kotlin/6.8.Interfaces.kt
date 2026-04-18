@@ -35,6 +35,24 @@ class Cow2: Animal2 {
     }
 }
 
+// multiple interfaces
+interface Flyable {
+    fun fly()
+}
+
+interface Swimmable {
+    fun swim()
+}
+
+class Duck: Flyable, Swimmable {
+    override fun fly() {
+        println("Duck can Swim!!!")
+    }
+
+    override fun swim() {
+        println("Duck can Fly!!!")
+    }
+}
 
 fun main() {
     val button = Button()
@@ -48,4 +66,10 @@ fun main() {
 
     val cow = Cow2()
     cow.sound()
+
+
+    // multiple interface
+    val duck = Duck()
+    duck.fly()
+    duck.swim()
 }
