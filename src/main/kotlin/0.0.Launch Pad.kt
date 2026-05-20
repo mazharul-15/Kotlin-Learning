@@ -3,7 +3,7 @@
     which I have learned yesterday.....
  */
 
-class Student {
+/*class Student {
     var name: String? = null
 }
 
@@ -174,4 +174,43 @@ fun controlFlow() {
         in 80..100 -> println("A+")
         else -> println("Invalid Number Entered")
     }
+}
+*/
+
+fun main(args: Array<String>) {
+    dataType()
+    variableDec()
+}
+
+fun dataType() {
+    // immutable
+    val num: Int = 0
+    val numf: Float = 12f
+    val numD: Double = 23.45
+
+    val check: Boolean = true
+
+    val ch: Char = 'C'
+    val name: String = "Mazhar"
+
+    // mutable
+    var num2: Int = 0
+    var numf2: Float = 2.3f
+    var numD2: Double = 323.2
+
+    var check2: Boolean = false
+    var ch2: Char = 'C'
+    var name2: String = "Abc"
+}
+
+fun variableDec() {
+    // 1D Primitive Array
+    val arrPrimitive = intArrayOf(1, 3, 4, 5)
+    val arrPrimitive2 =  IntArray(5)
+
+    // 1D Generic Array
+    val arrGeneric = arrayOf(1, 4, 5)
+    val arrGeneric2 = arrayOf<Int>(2, 5,6)
+    val arrGeneric3 = Array<Int>(4){0}
+    val arrGeneric5: Array<Int> = Array(4){0}
 }
