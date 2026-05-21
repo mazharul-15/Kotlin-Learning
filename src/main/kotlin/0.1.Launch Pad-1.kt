@@ -31,6 +31,27 @@ fun controlFlow() {
 }
 
 fun functions() {
+    //check admin
+    val result = checkAdmin(
+        userName = "admin",
+        password = "Pi12aDmIn",
+        email = "admin@gmail.com"
+    )
+
+    val result2 = checkAdmin(
+        userName = "admin",
+        password = "Pi12aDmIn",
+        email = "admin@gmail.com"
+    )
+
+    if(result) {
+        println("logged in succesfully!!")
+    }
+    else {
+        println("log in information error!!")
+    }
+
+
 
 }
 
@@ -49,12 +70,17 @@ fun addTwo2(num1: Int, num2: Int): Int {
     return num1 + num2
 }
 
-fun namedArgument(userName: String, password: String, email: String, username: String, Password: String, Email: String): Boolean {
+fun namedArgument(userName: String,
+                  password: String,
+                  email: String,
+                  username: String,
+                  Password: String,
+                  Email: String): Boolean {
     return (userName==username && password==Password && email==Email)
 }
 
 fun checkAdmin(userName: String, password: String, email: String): Boolean {
-    return (userName == "Admin" &&
+    return (userName == "admin" &&
             password == "Pi12aDmIn" &&
             email == "admin@gmail.com")
 }
