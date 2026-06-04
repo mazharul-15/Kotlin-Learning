@@ -44,6 +44,12 @@ fun allOperatonOfList() {
     listV2.add("I love my University!!!!")
     println("After adding the list: " + listV2)
 
+    var anyTypeList: List<Any> = listOf(1, "1", 'A', 1.2f, "BD", 1.3)
+    for(el in  anyTypeList) print("$el ")
+    println("\n")
+    anyTypeList.forEach { it -> print("$it ") }
+    println("\n")
+
     // Empty list declaration
     val list = listOf<String>()
     val listMutable = mutableListOf<String>()
@@ -72,6 +78,7 @@ fun allOperatonOfList() {
     allList2.set(1, "New Value2")
     println("The list value: " + allList2)
 
+
     // size & checking
     val allList3 = mutableListOf<String>("A", "B", "C", "D", "E", "F")
     println("The size of list: " + allList3.size)
@@ -80,11 +87,13 @@ fun allOperatonOfList() {
     println("The contains function: " + allList3.contains("C"))
     println("The all contains function: " + allList3.containsAll(listOf("A", "D", "E")))
 
+
     // loop operations
     val allList4 = mutableListOf<String>("A", "B", "C", "D", "E", "F")
     for (item in allList4) { print(allList4 + " ") }; println()
     allList4.forEach { print(it + " ")}
     allList4.forEachIndexed { index, value -> println("$index -> $value") }
+
 
     // transformation operations (very important)
     val allList5 = mutableListOf<String>("A", "B", "C", "D", "E", "F")

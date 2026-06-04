@@ -20,6 +20,11 @@ fun DataTypeAndVariable() {
     var number13: Int = readLine()!!.toInt()
     var number14 = readLine()?.toInt()
 
+    var number15: Short = 13
+    var number16: Byte = 1
+
+    var bool: Boolean = true
+
 }
 
 fun operatorAll() {
@@ -154,7 +159,7 @@ fun anonymousFunction() {
 
 fun dataTypesPassAndReturn() {
     val res = passStringAndReturnString("bds")
-    val res1 = passListAndReturnList()
+    val res1= passListAndReturnList()
 }
 
 fun passStringAndReturnString(str: String): String {
@@ -163,5 +168,6 @@ fun passStringAndReturnString(str: String): String {
 }
 
 fun passListAndReturnList() : List<String> {
-
+    val ls: List<String> = listOf()
+    return ls
 }
