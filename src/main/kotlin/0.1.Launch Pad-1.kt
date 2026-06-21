@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
     functions()
     arrayAll()
     stringAll()
-
+    kotlinCollections()
 }
 
 fun DataTypeAndVariable() {
@@ -170,4 +170,8 @@ fun passStringAndReturnString(str: String): String {
 fun passListAndReturnList() : List<String> {
     val ls: List<String> = listOf()
     return ls
+}
+
+fun kotlinCollections() {
+
 }

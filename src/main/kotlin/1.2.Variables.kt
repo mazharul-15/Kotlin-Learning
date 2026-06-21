@@ -57,7 +57,7 @@ fun main() {
 
     // Float Array
     val arrf2 = floatArrayOf(1.2f, 4.5f, 6.7f)
-    val arrf1 = FloatArray(3) // init value: 0.0, 0.0, 0.0
+    val arrf1 =  FloatArray(3) // init value: 0.0, 0.0, 0.0
 
     val arrf3 = Array(3){ FloatArray(3) }
         /*
