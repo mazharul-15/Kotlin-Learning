@@ -173,5 +173,15 @@ fun passListAndReturnList() : List<String> {
 }
 
 fun kotlinCollections() {
+    /// ArrayList
+    val arr12: ArrayList<Int> = arrayListOf()
+    val arr13: ArrayList<Any> = arrayListOf()
 
+    val arr14: ArrayList<String> = arrayListOf()
+    arr14.add("BD")
+    arr14.addAll(listOf("A", "B", "BNG"))
+    arr14.forEach { println("$it ") }
+    for(el in arr14) {
+        print("$el ")
+    }
 }
