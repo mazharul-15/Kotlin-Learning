@@ -62,13 +62,13 @@ class Profile(
     val image: Image?
 )
 
-class User(
+class FacebookUser(
     val profile: Profile?
 )
 
 fun safeCallChain() {
         // calling safe call chain
-    val user: User? = null
+    val user: FacebookUser? = null
     val imageUrl = user?.profile?.image?.url
     println("The ImageUrl: $imageUrl")
 }
