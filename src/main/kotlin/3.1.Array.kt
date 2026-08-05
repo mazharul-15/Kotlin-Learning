@@ -26,6 +26,7 @@ fun arrayTypes() {
 
     // Generic Array
     val arrGInt = arrayOf(1, 2, 3)
+    arrGInt.set(4, 55)
     val arrGInt2 = arrayOf<Int>(1, 2, 4)
     val arrGInt3: Array<Int> = arrayOf(1, 3, 4)
 
