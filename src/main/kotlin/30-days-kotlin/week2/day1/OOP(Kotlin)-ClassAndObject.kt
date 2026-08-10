@@ -42,7 +42,7 @@ class Salary(
     val wage: Double
 )
 
-class Employee(
+class Employee29(
     val name: String,
     val address: Address,
     val department: Department,
@@ -73,7 +73,7 @@ fun main() {
     val department = Department("Engineering")
     val salary = Salary(56000.00)
 
-    val employee = Employee(
+    val employee = Employee29(
         "Rashed",
         address,
         department,

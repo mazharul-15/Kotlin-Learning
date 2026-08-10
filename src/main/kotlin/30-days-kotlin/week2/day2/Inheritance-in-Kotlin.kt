@@ -34,13 +34,20 @@ class Cat5(color: String): Animal5(color) {
 
         //2.Composition
 class Address5(
-    val roadNO: String,
-    val city: String
+    val village: String,
+    val post: String,
+    val upazila: String,
+    val distric: String
 )
 
 class User5(
     val name: String,
     val address: Address5,
+)
+
+class Employee(
+    val name: String,
+    val address5: Address5
 )
 
 fun main() {
@@ -53,11 +60,22 @@ fun main() {
     println("Sound: ${dog.bark()}")
 
     // composition
-    val address = Address5("khl Road", "Paikgachha")
+    val address = Address5(
+        "Aminpur",
+        "Paikgachha",
+        "Paikgachha",
+        "Khulna"
+        )
     val user = User5("Shamim", address)
 
     println("Name: ${user.name}")
-    println("RaodNo: ${user.address.roadNO}")
-    println("City: ${user.address.city}")
+    println("RaodNo: ${user.address.village}")
+    println("City: ${user.address.post}")
+    println("City: ${user.address.upazila}")
+    println("City: ${user.address.distric}")
 
+    val employee = Employee(
+        "Amin",
+        address
+    )
 }
