@@ -29,7 +29,7 @@ class CardPayment: Payment() {
 }
 
 /// Interface
-interface Flyable {
+interface Flyable2 {
     fun fly()
 }
 
@@ -37,7 +37,7 @@ interface Swimable {
     fun swim()
 }
 
-class Duck: Flyable, Swimable {
+class Duck22: Flyable2, Swimable {
     override fun fly() {
         println("Duck is flying")
     }
