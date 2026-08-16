@@ -4,7 +4,7 @@
 
 // extension function on a custom class
 class Student88(
-    val name: String
+    val name: String,
     val age: Int
 )
 
