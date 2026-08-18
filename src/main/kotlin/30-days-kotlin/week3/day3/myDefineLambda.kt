@@ -6,6 +6,15 @@
 fun myDefinedMap(numbers: List<Int>, action: (List<Int>)-> List<Int>): List<Int> {
     return action(numbers)
 }
+
+// my click function
+fun onClick() {
+        println("Button Clicked")
+}
+
+fun myDefinedLambda(action: ()-> Unit) {
+    action()
+}
         
         
 fun main() {
@@ -20,4 +29,9 @@ fun main() {
     }
 
     println(result.joinToString())
+
+    // my click function
+    myDefinedLambda {
+        onClick()
+    }
 }
