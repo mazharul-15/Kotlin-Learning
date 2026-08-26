@@ -2,7 +2,7 @@
    Kotlin Visibility Modifier
  */
 
-class BankAccount() {
+class BankAccount55() {
     // public
     val name: String = "Abir"
     private val password: String = "e@bnAiQ84@d"
@@ -34,6 +34,6 @@ class BankAccount() {
 
 fun main() {
 
-    val bankAccount = BankAccount()
+    val bankAccount = BankAccount55()
     bankAccount.showPassord()
 }
