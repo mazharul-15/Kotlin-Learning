@@ -1,3 +1,6 @@
+import java.sql.Connection
+import javax.xml.crypto.Data
+
 /*
     Kotlin Lateinit and Lazy
 
@@ -21,6 +24,15 @@ class Student33 {
     }
 }
 
+// lazy
+class Database{
+    lateinit var databaseConnection: Connection
+
+    fun showInfo() {
+        println("Database Connected")
+    }
+}
+
 fun main() {
     // lateinit
     lateinit var name: String
@@ -37,4 +49,9 @@ fun main() {
     println(age)
     println(age)
     println(age)
+
+    // lazy
+    val database by lazy {
+        Database()
+    }
 }
